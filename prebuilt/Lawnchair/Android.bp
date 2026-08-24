@@ -1,15 +1,15 @@
 prebuilt_etc {
     name: "privapp-permissions-app.lawnchair.xml",
     src: "privapp-permissions-app.lawnchair.xml",
-    product_specific: true,
-    relative_install_path: "permissions",
+    system_ext_specific: true,
+    sub_dir: "permissions",
 }
 
 prebuilt_etc {
     name: "sysconfig-app.lawnchair.xml",
     src: "sysconfig-app.lawnchair.xml",
-    product_specific: true,
-    relative_install_path: "sysconfig",
+    system_ext_specific: true,
+    sub_dir: "sysconfig",
 }
 
 android_app_import {
@@ -18,7 +18,7 @@ android_app_import {
     preprocessed: true,
     presigned: true,
     privileged: true,
-    product_specific: true,
+    system_ext_specific: true,
     skip_preprocessed_apk_checks: true,
     dex_preopt: {
         enabled: false,
