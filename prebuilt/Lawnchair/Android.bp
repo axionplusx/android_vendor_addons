@@ -16,7 +16,7 @@ android_app_import {
     name: "Lawnchair",
     apk: "Lawnchair.apk",
     preprocessed: true,
-    presigned: true,
+    certificate: "platform",
     privileged: true,
     system_ext_specific: true,
     skip_preprocessed_apk_checks: true,
